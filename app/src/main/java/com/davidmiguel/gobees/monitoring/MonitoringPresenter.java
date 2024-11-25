@@ -71,7 +71,7 @@ class MonitoringPresenter implements MonitoringContract.Presenter, CvCameraViewL
         // Show monitoring view
         view.showMonitoringView();
         // Start recording service
-        view.startMonitoringService(ms);
+        view.startMonitoringgService(ms);
         // Bind to service
         view.bindMonitoringService();
     }

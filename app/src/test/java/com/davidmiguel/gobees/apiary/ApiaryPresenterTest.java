@@ -114,8 +114,7 @@ public class ApiaryPresenterTest {
     public void loadHivesError_showMsg() {
         // Given an initialized ApiaryPresenter
         // When loading of apiaries is requested
-        apiaryPresenter.start(); // Hive list fragment
-        apiaryPresenter.start(); // Info fragment
+        apiaryPresenter.start();
         // Callback is captured and invoked with stubbed apiaries
         verify(goBeesRepository).getApiary(anyLong(), getApiaryCallbackArgumentCaptor.capture());
         getApiaryCallbackArgumentCaptor.getValue().onDataNotAvailable();
