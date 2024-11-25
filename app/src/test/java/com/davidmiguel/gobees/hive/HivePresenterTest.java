@@ -103,11 +103,12 @@ public class HivePresenterTest {
     public void loadRecordings_showRecordingsIntoView() {
         // Given an initialized HivePresenter
         // When loading of recordings is requested
-        hivePresenter.start(); // Recordings list fragment
-        hivePresenter.start(); // Info fragment
+        hivePresenter.start();
+
         // Callback is captured and invoked with stubbed hives
         verify(goBeesRepository).getHiveWithRecordings(anyLong(), getHiveCallbackArgumentCaptor.capture());
         getHiveCallbackArgumentCaptor.getValue().onHiveLoaded(HIVE);
+
         // Then progress indicator is shown
         InOrder inOrder = inOrder(hiveRecordingsView);
         // Then progress indicator is hidden and all hives are shown in UI
@@ -123,8 +124,7 @@ public class HivePresenterTest {
     public void loadRecordingsError_showMsg() {
         // Given an initialized HivePresenter
         // When loading of recordings is requested
-        hivePresenter.start(); // Recordings list fragment
-        hivePresenter.start(); // Info fragment
+        hivePresenter.start();
         // Callback is captured and invoked with stubbed hives
         verify(goBeesRepository).getHiveWithRecordings(anyLong(),
                 getHiveCallbackArgumentCaptor.capture());

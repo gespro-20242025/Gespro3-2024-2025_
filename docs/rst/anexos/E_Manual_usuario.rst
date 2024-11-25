@@ -4,23 +4,22 @@ Manual de usuario
 Introducción
 ------------
 
+En este manual se detallan los requerimientos de la aplicación, cómo
+instalarla en un dispositivo Android e indicaciones sobre cómo
+utilizarla correctamente. Todos los procedimientos aquí descritos se
+encuentran también disponibles en formato video.
+
 Requisitos de usuarios
 ----------------------
 
-<<<<<<< HEAD
-Instalación
------------
-
-Manual del usuario
-------------------
-=======
 Los requisitos mínimos para poder hacer uso de la aplicación son:
 
 -  Contar con un dispositivo que posea Android 4.4 (*KitKat* – API 19) o
    superior.
 
 -  Para utilizar la característica de monitorización de la actividad, es
-   necesario tener instalada la aplicación `OpenCV Manager <https://play.google.com/store/apps/details?id=org.opencv.engine>`__.
+   necesario tener instalada la aplicación OpenCV Manager.
+   https://play.google.com/store/apps/details?id=org.opencv.engine
 
 -  También se necesita contar con permiso para acceder a la cámara del
    dispositivo.
@@ -545,4 +544,3 @@ Para acceder a la sección “Acerca de GoBees”:
 
 .. |about-gobees| image:: ../../img/about-gobees.png
    :width: 200px
->>>>>>> parent of ed06bc7 (Minor fixes 152)
