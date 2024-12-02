@@ -102,6 +102,8 @@ public class ApiaryPresenterTest {
     }
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 
     @Test
     public void loadHivesError_showMsg() {
@@ -170,4 +172,5 @@ public class ApiaryPresenterTest {
         verify(apiaryInfoView).openMap(any(Apiary.class));
     }
 >>>>>>> origin/master
+>>>>>>> master
 }

@@ -89,8 +89,12 @@ public class HivePresenterTest {
 <<<<<<< HEAD
         hivePresenter.loadData(true);
 =======
+<<<<<<< HEAD
+        hivePresenter.loadData(true);
+=======
         hivePresenter.start();
 >>>>>>> origin/master
+>>>>>>> master
 
         // Callback is captured and invoked with stubbed hives
         verify(goBeesRepository).getHiveWithRecordings(anyLong(), getHiveCallbackArgumentCaptor.capture());
@@ -106,6 +110,8 @@ public class HivePresenterTest {
         // Assert that the number of hives shown is the expected
         assertTrue(showRecordingsArgumentCaptor.getValue().size() == HIVE.getRecordings().size());
     }
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
 
@@ -193,4 +199,5 @@ public class HivePresenterTest {
         verify(hiveRecordingsView).showDeletedErrorMessage();
     }
 >>>>>>> origin/master
+>>>>>>> master
 }
