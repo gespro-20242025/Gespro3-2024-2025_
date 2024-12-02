@@ -86,7 +86,11 @@ public class HivePresenterTest {
     public void loadRecordings_showRecordingsIntoView() {
         // Given an initialized HivePresenter
         // When loading of recordings is requested
+<<<<<<< HEAD
         hivePresenter.loadData(true);
+=======
+        hivePresenter.start();
+>>>>>>> origin/master
 
         // Callback is captured and invoked with stubbed hives
         verify(goBeesRepository).getHiveWithRecordings(anyLong(), getHiveCallbackArgumentCaptor.capture());
@@ -102,4 +106,91 @@ public class HivePresenterTest {
         // Assert that the number of hives shown is the expected
         assertTrue(showRecordingsArgumentCaptor.getValue().size() == HIVE.getRecordings().size());
     }
+<<<<<<< HEAD
+=======
+
+    @Test
+    public void loadRecordingsError_showMsg() {
+        // Given an initialized HivePresenter
+        // When loading of recordings is requested
+        hivePresenter.start();
+        // Callback is captured and invoked with stubbed hives
+        verify(goBeesRepository).getHiveWithRecordings(anyLong(),
+                getHiveCallbackArgumentCaptor.capture());
+        getHiveCallbackArgumentCaptor.getValue().onDataNotAvailable();
+        // Show error
+        verify(hiveRecordingsView).showLoadingRecordingsError();
+    }
+
+    @Test
+    public void newRecordingSaved_showMsg() {
+        hivePresenter.result(MonitoringActivity.REQUEST_MONITORING, Activity.RESULT_OK, null);
+        // Show msg
+        verify(hiveRecordingsView).showSuccessfullySavedMessage();
+    }
+
+    @Test
+    public void recordingTooShort_showMsg() {
+        when(intent.getIntExtra(anyString(), anyInt()))
+                .thenReturn(HiveRecordingsFragment.ERROR_RECORDING_TOO_SHORT);
+        hivePresenter.result(MonitoringActivity.REQUEST_MONITORING,
+                Activity.RESULT_CANCELED, intent);
+        // Show msg
+        verify(hiveRecordingsView).showRecordingTooShortErrorMessage();
+    }
+
+    @Test
+    public void saveRecordingError_showMsg() {
+        when(intent.getIntExtra(anyString(), anyInt()))
+                .thenReturn(HiveRecordingsFragment.ERROR_SAVING_RECORDING);
+        hivePresenter.result(MonitoringActivity.REQUEST_MONITORING,
+                Activity.RESULT_CANCELED, intent);
+        // Show msg
+        verify(hiveRecordingsView).showSaveErrorMessage();
+        // Undefined error
+        hivePresenter.result(-1,
+                Activity.RESULT_CANCELED, intent);
+        // Show msg
+        verify(hiveRecordingsView).showSaveErrorMessage();
+    }
+
+    @Test
+    public void onStartPressed_initMonitoring() {
+        hivePresenter.startNewRecording();
+        // Start monitoring
+        verify(hiveRecordingsView).startNewRecording(eq(0L), eq(HIVE.getId()));
+    }
+
+    @Test
+    public void onRecordingClicked_openRecording() {
+        hivePresenter.openRecordingsDetail(HIVE.getRecordings().get(0));
+        // Open recording
+        verify(hiveRecordingsView).showRecordingDetail(eq(0L), eq(HIVE.getId()),
+                eq(HIVE.getRecordings().get(0).getDate()));
+    }
+
+    @Test
+    public void deleteRecording_showOkMsg() {
+        Recording recording = HIVE.getRecordings().get(0);
+        hivePresenter.deleteRecording(recording);
+        // Delete recording
+        verify(goBeesRepository).deleteRecording(eq(HIVE.getId()), eq(recording),
+                taskCallbackArgumentCaptor.capture());
+        taskCallbackArgumentCaptor.getValue().onSuccess();
+        // Show msg
+        verify(hiveRecordingsView).showSuccessfullyDeletedMessage();
+    }
+
+    @Test
+    public void deleteApiaryError_showError() {
+        Recording recording = HIVE.getRecordings().get(0);
+        hivePresenter.deleteRecording(recording);
+        // Delete recording
+        verify(goBeesRepository).deleteRecording(eq(HIVE.getId()), eq(recording),
+                taskCallbackArgumentCaptor.capture());
+        taskCallbackArgumentCaptor.getValue().onFailure();
+        // Show msg
+        verify(hiveRecordingsView).showDeletedErrorMessage();
+    }
+>>>>>>> origin/master
 }
