@@ -68,3 +68,10 @@ María Molina Goyena
 En el git hub de go bees buscamos el commit que vamos a actualizar.
 Hacemos click derecho en el commit, y nos vamos a reset master to this commit. Vamos a hacer un reseteo 'Hard', para eliminar todos los cambios posteriores.
 
+2. Nos posicionamos en la rama master.
+  Estando ahí nos dirigimos a P3 de forma local.
+  Hacemos pull para bajar los cambios guardados para evitar conflictos, y después pulsamos a fetch all para descargar todos los cambios y estar al día con el proyecto.
+
+3. En el fork creado en github del proyecto de go bees creamos una rama a partir de la tarea con nombre = a GO BEES.
+  
+
