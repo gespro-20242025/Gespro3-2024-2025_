@@ -4,14 +4,16 @@ Manual de usuario
 Introducción
 ------------
 
-En este manual se detallan los requerimientos de la aplicación, cómo
-instalarla en un dispositivo Android e indicaciones sobre cómo
-utilizarla correctamente. Todos los procedimientos aquí descritos se
-encuentran también disponibles en formato video.
-
 Requisitos de usuarios
 ----------------------
 
+<<<<<<< HEAD
+Instalación
+-----------
+
+Manual del usuario
+------------------
+=======
 Los requisitos mínimos para poder hacer uso de la aplicación son:
 
 -  Contar con un dispositivo que posea Android 4.4 (*KitKat* – API 19) o
@@ -544,3 +546,4 @@ Para acceder a la sección “Acerca de GoBees”:
 
 .. |about-gobees| image:: ../../img/about-gobees.png
    :width: 200px
+>>>>>>> master
