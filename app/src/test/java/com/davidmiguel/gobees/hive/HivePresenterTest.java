@@ -17,17 +17,11 @@
 
 package com.davidmiguel.gobees.hive;
 
-import android.app.Activity;
-import android.content.Intent;
-
 import com.davidmiguel.gobees.data.model.Hive;
-import com.davidmiguel.gobees.data.model.Recording;
 import com.davidmiguel.gobees.data.model.mothers.HiveMother;
 import com.davidmiguel.gobees.data.model.mothers.RecordingMother;
-import com.davidmiguel.gobees.data.source.GoBeesDataSource;
 import com.davidmiguel.gobees.data.source.GoBeesDataSource.GetHiveCallback;
 import com.davidmiguel.gobees.data.source.repository.GoBeesRepository;
-import com.davidmiguel.gobees.monitoring.MonitoringActivity;
 import com.google.common.collect.Lists;
 
 import org.junit.Before;
@@ -41,10 +35,7 @@ import org.mockito.MockitoAnnotations;
 import java.util.List;
 
 import static org.junit.Assert.assertTrue;
-import static org.mockito.Matchers.anyInt;
 import static org.mockito.Matchers.anyLong;
-import static org.mockito.Matchers.anyString;
-import static org.mockito.Matchers.eq;
 import static org.mockito.Mockito.inOrder;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
@@ -65,19 +56,13 @@ public class HivePresenterTest {
     @Mock
     private HiveContract.HiveInfoView hiveInfoView;
 
-    @Mock
-    private Intent intent;
-
     private HivePresenter hivePresenter;
 
     @Captor
     private ArgumentCaptor<GetHiveCallback> getHiveCallbackArgumentCaptor;
 
-    @Captor
-    private ArgumentCaptor<GoBeesDataSource.TaskCallback> taskCallbackArgumentCaptor;
-
     @Before
-    public void setupMocksAndView() {
+    public void setupHivesPresenter() {
         // To inject the mocks in the test the initMocks method needs to be called
         MockitoAnnotations.initMocks(this);
 
@@ -94,8 +79,6 @@ public class HivePresenterTest {
 
         // The presenter won't update the view unless it's active
         when(hiveRecordingsView.isActive()).thenReturn(true);
-        when(hiveInfoView.isActive()).thenReturn(true);
-        when(hiveRecordingsView.checkCameraPermission()).thenReturn(true);
     }
 
     @SuppressWarnings("unchecked")
@@ -103,7 +86,11 @@ public class HivePresenterTest {
     public void loadRecordings_showRecordingsIntoView() {
         // Given an initialized HivePresenter
         // When loading of recordings is requested
+<<<<<<< HEAD
+        hivePresenter.loadData(true);
+=======
         hivePresenter.start();
+>>>>>>> origin/master
 
         // Callback is captured and invoked with stubbed hives
         verify(goBeesRepository).getHiveWithRecordings(anyLong(), getHiveCallbackArgumentCaptor.capture());
@@ -119,6 +106,8 @@ public class HivePresenterTest {
         // Assert that the number of hives shown is the expected
         assertTrue(showRecordingsArgumentCaptor.getValue().size() == HIVE.getRecordings().size());
     }
+<<<<<<< HEAD
+=======
 
     @Test
     public void loadRecordingsError_showMsg() {
@@ -203,4 +192,5 @@ public class HivePresenterTest {
         // Show msg
         verify(hiveRecordingsView).showDeletedErrorMessage();
     }
+>>>>>>> origin/master
 }

@@ -17,9 +17,6 @@
 
 package com.davidmiguel.gobees.apiary;
 
-import android.app.Activity;
-
-import com.davidmiguel.gobees.addedithive.AddEditHiveActivity;
 import com.davidmiguel.gobees.data.model.Apiary;
 import com.davidmiguel.gobees.data.model.mothers.ApiaryMother;
 import com.davidmiguel.gobees.data.source.GoBeesDataSource;
@@ -36,9 +33,7 @@ import org.mockito.MockitoAnnotations;
 import java.util.List;
 
 import static org.junit.Assert.assertTrue;
-import static org.mockito.Matchers.any;
 import static org.mockito.Matchers.anyLong;
-import static org.mockito.Matchers.eq;
 import static org.mockito.Mockito.inOrder;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
@@ -61,9 +56,6 @@ public class ApiaryPresenterTest {
     @Mock
     private ApiaryContract.ApiaryInfoView apiaryInfoView;
 
-    @Captor
-    private ArgumentCaptor<GoBeesDataSource.TaskCallback> taskCallbackArgumentCaptor;
-
     private ApiaryPresenter apiaryPresenter;
 
     @Captor
@@ -73,7 +65,7 @@ public class ApiaryPresenterTest {
     private ArgumentCaptor<GoBeesDataSource.GetApiaryCallback> getApiaryCallbackArgumentCaptor;
 
     @Before
-    public void setupMocksAndView() {
+    public void setupHivesPresenter() {
         // To inject the mocks in the test the initMocks method needs to be called
         MockitoAnnotations.initMocks(this);
 
@@ -86,7 +78,6 @@ public class ApiaryPresenterTest {
 
         // Create 3 hives
         APIARY = ApiaryMother.newDefaultApiary(NUM_BEES);
-        APIARY.setId(APIARY_ID);
     }
 
     @SuppressWarnings({"unchecked", "ConstantConditions"})
@@ -109,6 +100,8 @@ public class ApiaryPresenterTest {
         // Assert that the number of hives shown is the expected
         assertTrue(showHivesArgumentCaptor.getValue().size() == APIARY.getHives().size());
     }
+<<<<<<< HEAD
+=======
 
     @Test
     public void loadHivesError_showMsg() {
@@ -176,4 +169,5 @@ public class ApiaryPresenterTest {
         // Open map
         verify(apiaryInfoView).openMap(any(Apiary.class));
     }
+>>>>>>> origin/master
 }
