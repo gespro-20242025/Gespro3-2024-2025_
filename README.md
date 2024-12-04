@@ -115,6 +115,8 @@ Acabamos haciendo un pull de la rama master:
 
 Podemos comprobar que el proceso ha sido exitoso.
 
+
+(A partir de ahora se mostrará el resultado del proyecto para los 8 commits originales, no se incluirá el noveno empleado para la explicación de arriba, más que en una foto de github donde se indicará con un mensaje de este estilo).
 ## Git Kraken:
 ### Gráfico obtenido con una captura de pantalla con la lista de commits del repositorio:
 ![image](https://github.com/user-attachments/assets/ebc43272-8fd5-4565-9f83-4678df95d297)
