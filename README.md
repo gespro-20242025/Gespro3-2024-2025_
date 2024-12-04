@@ -26,42 +26,89 @@ Por otro lado, sí que se verá reflejado en las pull requests de git hub que fu
 ### 3)	P3(GH):Crear rama a partir de tarea con nombre = a GO BEES
  ![image](https://github.com/user-attachments/assets/82c3b628-d8c3-4771-a573-8abd2d407b41)
  
- En el fork creado en github del proyecto de go bees creamos una rama a partir de la tarea con nombre = a GO BEES.
+ En el fork creado en github del proyecto de go bees creamos una rama a partir de la tarea con nombre que había en el go bees, en este caso, es add cd cover 173.
+ (Hubo un problema con esta nueva issue creada y consultamos al profesor que creó otra issue igual, pero que sería la número 19 llamada add cd cover 173 ii, que es con la que se trabajará más   adelante. Lamento que esta captura esté desactualizada, ya que creamos la branch de la 19 en el momento y no se pudo realizar captura para esta. Por lo que la 18 que se muestra aquí es una issue desactualizada.)
+ Tras esto, dejamos la configuración por defecto de checkout locally y pulsamos en el botón verde de abajo a la derecha que nos indica create branch.
+ Con esto, ya podríamos ver la rama creada en el gitKraken.
 
 ### 4)	P3(GK): Posicionarse en rama local
+
+ ![image](https://github.com/user-attachments/assets/8ea429e1-ba32-4fea-b015-d7ea845222c8)
+
+ Para ello, primero nos habrá salido en el apartado de remote, del gitkraken, pero con pulsar dos veces sobre esta, nos la trasladará a local.
+
  ![image](https://github.com/user-attachments/assets/69ed3e0b-62f0-41c3-849e-d677188d7f09)
-  Nos posicionamos en la rama que acabamos de crear en local
+  
+ Nos posicionamos entonces en la rama que acabamos de crear en local.
+ 
 ### 5)	Añadir cambios de carpeta GO BEES a la carpeta P3 (Excluyendo .git)
+
  ![image](https://github.com/user-attachments/assets/f175cbc8-e115-4af5-9c54-8a3d9b3e7f09)
+ 
   Nos metemos a la carpeta donde tenemos el repositorio de gobees y copiamos todo menos el .git
+  
  ![image](https://github.com/user-attachments/assets/c0e93ce3-a93a-4d04-a00d-5cbba9f71c5f)
 
+ Después, lo pegamos en la carpeta con nuestro fork del repositorio, sobreescribiendo los archivos correspondientes.
+
 ### 6)	Git Stage all + git commit (Nombre commit). Si Git Fetch All tiene cambios git pull + git push, si no solo git push.
+
+Nos saldrá ahora un mensaje en gitKraken de 57 changes in directory, así que clicamos en el botón de view changes que aparece a la derecha de este mensaje emergente y nos aparecerá algo como lo siguiente:
+
  ![image](https://github.com/user-attachments/assets/177353c0-4f01-420b-a499-00c80d3fff99)
-  Clicamos en stage all changes y nos saldrá lo siguiente:
+ 
+ Ahora, clicamos en stage all changes y nos saldrá lo siguiente:
  
  ![image](https://github.com/user-attachments/assets/b1e889bb-96d4-4f9f-be54-c6e14985888c)
-  ![image](https://github.com/user-attachments/assets/6b3dca49-624f-4a54-84cb-5faa9b4b5485)
-  ![image](https://github.com/user-attachments/assets/b4bc8cbf-60cb-47ae-a529-1fffae98db7e)
 
+ Se habrán movido todos los cambios de unstaged changes a staged changes para poder confirmarlos posteriormente.
+ Posteriormente, le damos el nombre de la tarea a este commit, para detallar que estos son los cambios referentes a esta tarea:
  
+  ![image](https://github.com/user-attachments/assets/6b3dca49-624f-4a54-84cb-5faa9b4b5485)
+
+  Se habrán añadido los cambios a la rama:
+
+  ![image](https://github.com/user-attachments/assets/b4bc8cbf-60cb-47ae-a529-1fffae98db7e)
+  
+  Antes de hacer push y que se les muestren los cambios a los demás miembros del equipo, primero hacemos un Fetch All y, si hay cambios nuevos,
+  realizamos un pull para cargar estos nuevos cambios.
   Ahora hacemos push de los cambios antes de hacer pull request.
   Nos saldrá abajo un mensaje de verificación del push.
+  
 ### 7)	Crear PRQ( de nombre proyecto A nuestro proyecto) MASTER
+
+En github, vamos a nuestro fork y, en la barra de arriba, pulsamos en pull requests.
+
  ![image](https://github.com/user-attachments/assets/c5476312-6159-40cc-949d-a3ce31d2d2c2)
+ 
   Hacemos una nueva pull request clicando en new pull request.
+  
  ![image](https://github.com/user-attachments/assets/d1000a98-a22a-4fbd-b7ab-ed1f28f596e2)
-  Seleccionamos la pull request 19-add-cd-cover-173-ii.
+ 
+  Seleccionamos la pull request 19-add-cd-cover-173-ii que se nos muestra en esta ventana.
+  
  ![image](https://github.com/user-attachments/assets/b0097814-1f2b-45fe-be14-7e9e61cd02ed)
+
+ (El mensaje que sale en rojo era porque justo a la hora de hacer la pull request se hicieron cambios sobre este documento readme, pero fueron solucionados más adelante sin mucho problema para evitar conflictos.)
 
 ### 8)	Merge PRQ y actualizar MASTER en local
 
 ![image](https://github.com/user-attachments/assets/8300f9b7-d956-4da6-8761-2874e5f6662c)
-  Pulsamos encreate pull request
+
+  Pulsamos en create pull request.
+  
  ![image](https://github.com/user-attachments/assets/0c5b7827-ca98-4103-87bd-304ae3e5b998)
+
+ Vemos que no hay conflictos y pulsamos en merge branch.
+ 
 ![image](https://github.com/user-attachments/assets/2ae77bf4-b2da-43f2-a1da-367ea823e0f3)
+
+Confirmamos el merge.
+
 ![image](https://github.com/user-attachments/assets/fa30fcfc-a00d-4bcf-a914-12f23defd8d8)
-  Acabamos haciendo un pull de la rama masters 
+
+Nos sale un mensaje de confirmación de que el pull request se ha llevado a cabo de manera exitosa y se ha sincronizado con la rama master.
+Acabamos haciendo un pull de la rama master:
 ![Captura de pantalla 2024-12-02 101234](https://github.com/user-attachments/assets/854497ed-31ef-49d8-98fb-2c4a4482f4d4)
 ![Captura de pantalla 2024-12-02 101253](https://github.com/user-attachments/assets/12ac7cf4-f226-4ba6-a5b2-f27eef3dca2c)
 
