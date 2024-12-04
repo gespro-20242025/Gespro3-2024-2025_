@@ -6,20 +6,24 @@ María Molina Goyena
 ### 1)	Go Bees (GK): Posicionarse en el commit para subir cambios
  ![image](https://github.com/user-attachments/assets/891bda0e-3976-47a7-b5d7-69a3c2d83dd6)
 
-  Nos vamos al go bees al commit en el que queremos posicionarnos.
+  En el git hub de go bees buscamos el commit que vamos a actualizar.
+  
  ![image](https://github.com/user-attachments/assets/e55ba5d1-e918-445e-be23-81213ee17400)
 
-  Click derecho, vamos a reset master to this commit- Hard- discard all changes.
+  Hacemos click derecho en el commit, y nos vamos a reset master to this commit. Vamos a hacer un reseteo 'Hard', para eliminar todos los cambios posteriores.
 
 ### 2)	P3(GK): Tener MASTER al día y estar posicionado en MASTER
  ![image](https://github.com/user-attachments/assets/07b237ee-22a1-4ac8-b0a4-635032bd2feb)
 
-  En P3 nos posicionamos en la rama master en la pantalla de local.
+  Nos posicionamos en la rama master.
+  Estando ahí nos dirigimos a P3 de forma local.
  ![image](https://github.com/user-attachments/assets/b08167b8-ab8a-4ad7-bfcf-a3b57463776c)
 
-  En P3, vamos a pull y a fetch all para descargar todos los cambios y estar al día con el proyecto.
+  Hacemos pull para bajar los cambios guardados para evitar conflictos, y después pulsamos a fetch all para descargar todos los cambios y estar al día con el proyecto.
 ### 3)	P3(GH):Crear rama a partir de tarea con nombre = a GO BEES
  ![image](https://github.com/user-attachments/assets/82c3b628-d8c3-4771-a573-8abd2d407b41)
+ 
+ En el fork creado en github del proyecto de go bees creamos una rama a partir de la tarea con nombre = a GO BEES.
 
 ### 4)	P3(GK): Posicionarse en rama local
  ![image](https://github.com/user-attachments/assets/69ed3e0b-62f0-41c3-849e-d677188d7f09)
@@ -58,20 +62,25 @@ María Molina Goyena
 ![Captura de pantalla 2024-12-02 101234](https://github.com/user-attachments/assets/854497ed-31ef-49d8-98fb-2c4a4482f4d4)
 ![Captura de pantalla 2024-12-02 101253](https://github.com/user-attachments/assets/12ac7cf4-f226-4ba6-a5b2-f27eef3dca2c)
 
+## Git Kraken:
+### Gráfico obtenido con una captura de pantalla con la lista de commits del repositorio:
+![image](https://github.com/user-attachments/assets/ebc43272-8fd5-4565-9f83-4678df95d297)
+
+### Captura de pantalla del primer commit:
+![image](https://github.com/user-attachments/assets/01ac3293-edee-4532-81b8-91211b1a7a42)
+
+### Captura de pantalla del último commit:
+![image](https://github.com/user-attachments/assets/99049420-5038-47b7-a46a-2b8b8fc44356)
+
+
  
 ## Github:
-### La información del proyecto de Github obtenida desde la opción de menú "Insights→Pulse" (10%)
-### La información del proyecto de Github obtenida desde la opción menú "Insights→ Code frequency" (10%)
+### La información del proyecto de Github obtenida desde la opción de menú "Insights→Pulse":
+### La información del proyecto de Github obtenida desde la opción menú "Insights→ Code frequency":
 ### Captura con la relación de las PRQs realizadas cerradas:
 ![image](https://github.com/user-attachments/assets/09a4704c-c06a-428b-969d-0edae26c82ac)
-1. Vemos que hemos seguido el orden de los commits de go bees, por lo que, la primera en cerrarse fue Add cd cover 173
-En el git hub de go bees buscamos el commit que vamos a actualizar.
-Hacemos click derecho en el commit, y nos vamos a reset master to this commit. Vamos a hacer un reseteo 'Hard', para eliminar todos los cambios posteriores.
 
-2. Nos posicionamos en la rama master.
-  Estando ahí nos dirigimos a P3 de forma local.
-  Hacemos pull para bajar los cambios guardados para evitar conflictos, y después pulsamos a fetch all para descargar todos los cambios y estar al día con el proyecto.
-
-3. En el fork creado en github del proyecto de go bees creamos una rama a partir de la tarea con nombre = a GO BEES.
+Vemos que hemos seguido el orden de los commits de go bees, por lo que, la primera en cerrarse fue Add cd cover 173 y la última, convert annex A to latex 179.
+El orden de Pull requests ha ido alternativamente como se solicita en el enunciado, ya que ha sido Marcos, María, Alba, sucesivamente, uno detrás de otro, finalizando con el último pull request llevado a cabo por María.
   
 
