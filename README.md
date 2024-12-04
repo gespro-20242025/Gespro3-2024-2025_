@@ -120,14 +120,17 @@ Podemos comprobar que el proceso ha sido exitoso.
 ## Git Kraken:
 ### Gráfico obtenido con una captura de pantalla con la lista de commits del repositorio:
 ![image](https://github.com/user-attachments/assets/ebc43272-8fd5-4565-9f83-4678df95d297)
+
 Esta imagen muestra nuestro repositorio llamado Gespro3-2024-2025, en el que se visualizan varias ramas locales y remotas, incluyendo master y otras como 7-convert-annex-c-to-latex-151.
 
 ### Captura de pantalla del primer commit:
 ![image](https://github.com/user-attachments/assets/01ac3293-edee-4532-81b8-91211b1a7a42)
+
 Aqui podemos visualizar un acaptura de pantalla del primer commit realizado, identificado como 1e1999, fue realizado por Marcurio222 el 25/11/2024 a las 9:58 con el título "Add cd Cover 173". Este commit modifica un total de 74 archivos y añade 388 líneas de código.
 
 ### Captura de pantalla del último commit:
 ![image](https://github.com/user-attachments/assets/99049420-5038-47b7-a46a-2b8b8fc44356)
+
 También observamos el ultimo commit, identificado como e35948, titulado "Convert annex A to latex 179", fue realizado por Marcurio222 el 25/11/2024 a las 20:10 y afecta 6 archivos. 
 
  
