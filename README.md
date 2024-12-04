@@ -3,6 +3,9 @@ Marcos Zamorano Lasso
 Alba Abril Luengo
 María Molina Goyena
 ## Guía de cómo se realiza toda la secuencia de acciones desde que nos posicionamos en un nuevo commit del repositorio Go Bees hasta que pasa a estar visible en nuestra rama master local. 
+La guía la vamos a llevar a cabo con una rama nueva llamada add cd cover 173 ii que se empleará para poder realizar las capturas de pantalla del proceso correctamente.
+Destacar también que como la compañera Alba Abril Luengo no pudo realizar el clone del repositorio de clone bees correctamente al principio, en las capturas de gitkraken sólo saldrán María y Marcos, por lo que Alba ha sido la encargada de hacer este último commit.
+Por otro lado, sí que se verá reflejado en las pull requests de git hub que fuimos alternando entre participantes para llevarlas a cabo, como se solicitaba en el enunciado de la práctica.
 ### 1)	Go Bees (GK): Posicionarse en el commit para subir cambios
  ![image](https://github.com/user-attachments/assets/891bda0e-3976-47a7-b5d7-69a3c2d83dd6)
 
@@ -76,10 +79,20 @@ María Molina Goyena
  
 ## Github:
 ### La información del proyecto de Github obtenida desde la opción de menú "Insights→Pulse":
+
+![image](https://github.com/user-attachments/assets/d107f4bc-9e94-4802-a846-e67160742ca8)
+Para acceder a esta imagen, he ido en la barra de arriba a insights y a pulse en la barra lateral de la izquierda cuando entras en insights.
+(Esta imagen en concreto incluye el commit que hicimos para las capturas de la primera parte del readme, por eso no quedan 8, sino 9).
+
 ### La información del proyecto de Github obtenida desde la opción menú "Insights→ Code frequency":
+
+![image](https://github.com/user-attachments/assets/128420fe-2ad9-4fc6-9ce5-0b17246176fa)
+Para acceder a esta imagen, he ido en la barra de arriba a insights y a code frequency en la barra lateral de la izquierda cuando entras en insights.
+
 ### Captura con la relación de las PRQs realizadas cerradas:
 ![image](https://github.com/user-attachments/assets/09a4704c-c06a-428b-969d-0edae26c82ac)
 
+Para acceder a ella, he ido a pull requests y a closed.
 Vemos que hemos seguido el orden de los commits de go bees, por lo que, la primera en cerrarse fue Add cd cover 173 y la última, convert annex A to latex 179.
 El orden de Pull requests ha ido alternativamente como se solicita en el enunciado, ya que ha sido Marcos, María, Alba, sucesivamente, uno detrás de otro, finalizando con el último pull request llevado a cabo por María.
   
