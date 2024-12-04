@@ -89,6 +89,7 @@ En github, vamos a nuestro fork y, en la barra de arriba, pulsamos en pull reque
   
  ![image](https://github.com/user-attachments/assets/b0097814-1f2b-45fe-be14-7e9e61cd02ed)
 
+ Pulsamos en create pull request.
  (El mensaje que sale en rojo era porque justo a la hora de hacer la pull request se hicieron cambios sobre este documento readme, pero fueron solucionados más adelante sin mucho problema para evitar conflictos.)
 
 ### 8)	Merge PRQ y actualizar MASTER en local
@@ -111,6 +112,8 @@ Nos sale un mensaje de confirmación de que el pull request se ha llevado a cabo
 Acabamos haciendo un pull de la rama master:
 ![Captura de pantalla 2024-12-02 101234](https://github.com/user-attachments/assets/854497ed-31ef-49d8-98fb-2c4a4482f4d4)
 ![Captura de pantalla 2024-12-02 101253](https://github.com/user-attachments/assets/12ac7cf4-f226-4ba6-a5b2-f27eef3dca2c)
+
+Podemos comprobar que el proceso ha sido exitoso.
 
 ## Git Kraken:
 ### Gráfico obtenido con una captura de pantalla con la lista de commits del repositorio:
