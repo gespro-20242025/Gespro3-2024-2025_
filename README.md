@@ -126,7 +126,7 @@ Esta imagen muestra nuestro repositorio llamado Gespro3-2024-2025, en el que se 
 ### Captura de pantalla del primer commit:
 ![image](https://github.com/user-attachments/assets/01ac3293-edee-4532-81b8-91211b1a7a42)
 
-Aqui podemos visualizar un acaptura de pantalla del primer commit realizado, identificado como 1e1999, fue realizado por Marcurio222 el 25/11/2024 a las 9:58 con el título "Add cd Cover 173". Este commit modifica un total de 74 archivos y añade 388 líneas de código.
+Aqui podemos visualizar una captura de pantalla del primer commit realizado, identificado como 1e1999, fue realizado por Marcurio222 el 25/11/2024 a las 9:58 con el título "Add cd Cover 173". Este commit modifica un total de 74 archivos y añade 388 líneas de código.
 
 ### Captura de pantalla del último commit:
 ![image](https://github.com/user-attachments/assets/99049420-5038-47b7-a46a-2b8b8fc44356)
